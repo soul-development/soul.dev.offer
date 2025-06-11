@@ -1,0 +1,40 @@
+<svg id="_4" data-name="4" xmlns="http://www.w3.org/2000/svg" width="783" height="179" viewBox="0 0 783 179">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-8 {
+        font-size: 50px;
+      }
+
+      .cls-1, .cls-7, .cls-8 {
+        fill: #35306e;
+      }
+
+      .cls-1, .cls-3, .cls-5, .cls-8 {
+        font-family: Nunito;
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-5 {
+        font-style: italic;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #7071e8;
+      }
+
+      .cls-2, .cls-7 {
+        font-family: Pixellari;
+        font-weight: 500;
+      }
+
+      .cls-6 {
+        fill: #b2967d;
+      }
+    </style>
+  </defs>
+  <text id="soul" class="cls-1" transform="translate(7.159 173.763) scale(4.152 4.674)">soul</text>
+  <text id="dev" class="cls-2" transform="translate(467.16 172.763) scale(4.152 4.674)">dev</text>
+  <text id="_." data-name="." class="cls-3" transform="translate(408.033 123.655) scale(4.714)">.</text>
+  <text id="soul_dev" data-name="soul dev" class="cls-4" transform="translate(-4.841 166.763) scale(4.152 4.674)"><tspan class="cls-5">soul</tspan><tspan class="cls-6"> <tspan class="cls-7">dev</tspan></tspan></text>
+  <text id="_.-2" data-name="." class="cls-8" transform="translate(403.033 119.655) scale(4.714)">.</text>
+</svg>
