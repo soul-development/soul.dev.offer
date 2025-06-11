@@ -1,0 +1,50 @@
+---
+import type { TLangText } from '../i18n'
+
+export interface Props {
+  t: TLangText
+}
+const { t } = Astro.props
+---
+
+<div class="contacts">
+  <h3>{t.contacts.title}</h3>
+  <div class="contacts-list">
+    <div>
+      <span>Telegram:&nbsp;</span><a href="https://t.me/soul_dev_chat" target="_blank">@soul_dev_chat</a>
+    </div>
+    <div>
+      <span>{t.contacts.tg_chanel}&nbsp;</span><a href="https://t.me/soul_dev_channel" target="_blank">
+        @soul_dev_channel
+      </a>
+    </div>
+    <div>
+      <span>{t.contacts.tg_bot}&nbsp;</span><a href="https://t.me/soul_dev_bot" target="_blank">
+        @soul_dev_bot
+      </a>
+    </div>
+    <div>
+      <span>Email:&nbsp;</span><a href="mailto:dev.from.soul@gmail.com" target="_blank">
+        dev.from.soul@gmail.com
+      </a>
+    </div>
+  </div>
+
+  <style>
+    .contacts {
+      margin-top: 50px;
+      padding: 16px;
+    }
+    .contacts-list {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+  </style>
+</div>

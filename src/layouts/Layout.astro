@@ -1,22 +1,59 @@
+---
+export interface Props {
+  lang: string
+}
+const { lang } = Astro.props
+import "@fontsource/comfortaa/400.css"
+import "@fontsource/comfortaa/700.css"
+import "normalize.css"
+---
+
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>soul·dev</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <slot />
+    </div>
+  </body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+<style is:global>
+  :root {
+    --color-primary: #7071e8;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    line-height: 125%;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    &:hover {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  body {
+    background-color: #100014;
+    color: #fff;
+    font-family: "Comfortaa", sans-serif;
+    padding: 20px 20px 40px;
+  }
+  .main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 </style>

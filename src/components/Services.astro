@@ -1,0 +1,68 @@
+---
+import type { TLangText } from "../i18n"
+export interface Props {
+  t: TLangText
+}
+const { t } = Astro.props
+---
+
+<div class="services">
+  <h3>{t.services.title}</h3>
+  <div class="services-list">
+    <p>{t.services.web_li.title}</p>
+    <ul>
+      {t.services.web_li.li.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+  <p class="price-limit">{t.services.price_limit}</p>
+  <div class="services-list">
+    <p>{t.services.bot_li.title}</p>
+    <ul>
+      {t.services.bot_li.li.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+  <div class="interested">
+    <p>
+      <span>{t.services.interested.color}</span>&nbsp;
+      {t.services.interested.main}<br />{t.services.interested.check}
+    </p>
+    <p class="invite">{t.services.interested.online}</p>
+  </div>
+</div>
+<style>
+  .services {
+    margin-top: 30px;
+    h3 {
+      font-size: 16px;
+      color: var(--color-primary);
+      margin-bottom: 25px;
+    }
+  }
+  .services-list {
+    margin-top: 20px;
+    ul {
+      padding: 0;
+      margin: 20px 0 0 0;
+      list-style-position: inside;
+      li {
+        &:not(:first-child) {
+          margin-top: 4px;
+        }
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  .price-limit {
+    margin-top: 20px;
+  }
+  .interested {
+    margin-top: 30px;
+    .invite {
+      margin-top: 20px;
+    }
+    p span {
+      color: var(--color-primary);
+    }
+  }
+</style>

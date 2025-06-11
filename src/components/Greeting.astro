@@ -1,0 +1,38 @@
+---
+import type { TLangText } from "../i18n"
+export interface Props {
+  t: TLangText
+}
+const { t } = Astro.props
+---
+
+<div class="greeting">
+  <h1>{t.title}</h1>
+  <h2 class="greeting-text">{t.greeting}</h2>
+  <p class="who-we-are">
+    <span>{t.who_we_are_1.color}</span>&nbsp;{t.who_we_are_1.text}
+  </p>
+  <p class="who-we-are">{t.who_we_are_2.text}</p>
+</div>
+
+<style>
+  .greeting {
+    margin-top: 30px;
+  }
+  h1 {
+    font-size: 28px;
+    line-height: 100%;
+  }
+  .greeting-text {
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .who-we-are {
+    margin-top: 20px;
+    span {
+      color: var(--color-primary);
+    }
+  }
+</style>
