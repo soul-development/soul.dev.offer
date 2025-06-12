@@ -11,7 +11,6 @@ import vector3 from '../assets/vector_bg_3.svg'
 import { Image } from 'astro:assets'
 const devalokaLink = 'https://t.me/LeelaDevalokabot'
 const transcrLink = 'https://t.me/contentville_transcript_bot'
-const forYourHomeLink = 'https://for-your-home.vercel.app/ru/category/plastic-arts/6'
 ---
 
 <div class="cases">
@@ -20,15 +19,10 @@ const forYourHomeLink = 'https://for-your-home.vercel.app/ru/category/plastic-ar
     <div class="links">
       <a href={devalokaLink} target="_blank">@LeelaDevalokabot</a>
       <a href="https://t.me/Energy_Desenko_bot" target="_blank">@Energy_Desenko_bot</a>
-      <a href={transcrLink} target="_blank">
-        @contentville_transcript_bot
-      </a>
+      <a href={transcrLink} target="_blank">@contentville_transcript_bot</a>
       <a href="https://t.me/VoiceAuthor_bot" target="_blank">@VoiceAuthor_bot</a>
-      <a href={forYourHomeLink} target="_blank">
-        fyhart.site
-      </a>
     </div>
-    <img src={vector3.src} alt="" class="vector"/>
+    <img src={vector3.src} alt="" class="vector" />
   </div>
   <div class="cases-list">
     <div class="case-img">
@@ -42,9 +36,7 @@ const forYourHomeLink = 'https://for-your-home.vercel.app/ru/category/plastic-ar
       </a>
     </div>
     <div class="case-img">
-      <a href={forYourHomeLink} target="_blank">
-        <Image src={case3} alt="For Your Home case" quality={100} />
-      </a>
+      <Image src={case3} alt="For Your Home case" quality={100} />
     </div>
   </div>
 </div>
@@ -54,6 +46,9 @@ const forYourHomeLink = 'https://for-your-home.vercel.app/ru/category/plastic-ar
     h3 {
       font-size: 16px;
       color: var(--color-primary);
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
     }
     display: flex;
     justify-content: space-between;
@@ -89,16 +84,7 @@ const forYourHomeLink = 'https://for-your-home.vercel.app/ru/category/plastic-ar
       width: 200px;
     }
     @media (max-width: 768px) {
-      width: 150px;
-    }
-    @media (max-width: 570px) {
-      width: 120px;
-    }
-    @media (max-width: 480px) {
-      width: 100px;
-    }
-    @media (max-width: 430px) {
-      width: 80px;
+      width: 100%;
     }
   }
   .cases-list {
