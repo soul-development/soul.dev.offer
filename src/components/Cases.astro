@@ -9,19 +9,22 @@ import case2 from '../assets/case_2.png'
 import case3 from '../assets/case_3.png'
 import vector3 from '../assets/vector_bg_3.svg'
 import { Image } from 'astro:assets'
+const devalokaLink = 'https://t.me/LeelaDevalokabot'
+const transcrLink = 'https://t.me/contentville_transcript_bot'
+const forYourHomeLink = 'https://for-your-home.vercel.app/ru/category/plastic-arts/6'
 ---
 
 <div class="cases">
   <div class="cases-links">
     <h3>{t.cases.title}</h3>
     <div class="links">
-      <a href="https://t.me/LeelaDevalokabot" target="_blank">@LeelaDevalokabot</a>
+      <a href={devalokaLink} target="_blank">@LeelaDevalokabot</a>
       <a href="https://t.me/Energy_Desenko_bot" target="_blank">@Energy_Desenko_bot</a>
-      <a href="https://t.me/contentville_transcript_bot" target="_blank">
+      <a href={transcrLink} target="_blank">
         @contentville_transcript_bot
       </a>
       <a href="https://t.me/VoiceAuthor_bot" target="_blank">@VoiceAuthor_bot</a>
-      <a href="https://for-your-home.vercel.app/ru/category/plastic-arts/6" target="_blank">
+      <a href={forYourHomeLink} target="_blank">
         fyhart.site
       </a>
     </div>
@@ -29,13 +32,19 @@ import { Image } from 'astro:assets'
   </div>
   <div class="cases-list">
     <div class="case-img">
-      <Image src={case1} alt="Devaloka case" quality={100}  />
+      <a href={devalokaLink} target="_blank">
+        <Image src={case1} alt="Devaloka case" quality={100} />
+      </a>
     </div>
     <div class="case-img">
-      <Image src={case2} alt="Devaloka case" quality={100} />
+      <a href={transcrLink} target="_blank">
+        <Image src={case2} alt="Transcript bot case" quality={100} />
+      </a>
     </div>
     <div class="case-img">
-      <Image src={case3} alt="Devaloka case" quality={100} />
+      <a href={forYourHomeLink} target="_blank">
+        <Image src={case3} alt="For Your Home case" quality={100} />
+      </a>
     </div>
   </div>
 </div>
@@ -49,6 +58,9 @@ import { Image } from 'astro:assets'
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
   }
   .links {
     margin-top: 20px;
@@ -73,6 +85,21 @@ import { Image } from 'astro:assets'
       filter: drop-shadow(0 0 45px rgba(112, 113, 232, 0.4)) drop-shadow(0 0 8px #100014);
       will-change: filter;
     }
+    @media (max-width: 1280px) {
+      width: 200px;
+    }
+    @media (max-width: 768px) {
+      width: 150px;
+    }
+    @media (max-width: 570px) {
+      width: 120px;
+    }
+    @media (max-width: 480px) {
+      width: 100px;
+    }
+    @media (max-width: 430px) {
+      width: 80px;
+    }
   }
   .cases-list {
     flex-grow: 1;
@@ -89,8 +116,15 @@ import { Image } from 'astro:assets'
       transform: translate(-5%, 85%);
       left: 0;
       width: 1000px;
+      @media (max-width: 1280px) {
+        width: 100%;
+      }
       z-index: -1;
       user-select: none;
+    }
+    @media (max-width: 1024px) {
+      width: 100%;
+      order: 10;
     }
   }
 </style>
