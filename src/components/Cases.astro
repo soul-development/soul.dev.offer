@@ -7,11 +7,12 @@ const { t } = Astro.props
 import case1 from '../assets/case_1.png'
 import case2 from '../assets/case_2.png'
 import case3 from '../assets/case_3.png'
+import vector3 from '../assets/vector_bg_3.svg'
 import { Image } from 'astro:assets'
 ---
 
 <div class="cases">
-  <div>
+  <div class="cases-links">
     <h3>{t.cases.title}</h3>
     <div class="links">
       <a href="https://t.me/LeelaDevalokabot" target="_blank">@LeelaDevalokabot</a>
@@ -24,28 +25,30 @@ import { Image } from 'astro:assets'
         fyhart.site
       </a>
     </div>
+    <img src={vector3.src} alt="" class="vector"/>
   </div>
   <div class="cases-list">
     <div class="case-img">
-      <Image src={case1} alt="Devaloka case" quality={100} />
+      <Image src={case1} alt="Devaloka case" quality={100}  />
     </div>
     <div class="case-img">
       <Image src={case2} alt="Devaloka case" quality={100} />
     </div>
     <div class="case-img">
-      <Image src={case3} alt="Devaloka case" quality={100}/>
+      <Image src={case3} alt="Devaloka case" quality={100} />
     </div>
   </div>
 </div>
 <style>
   .cases {
-    margin-top: 35px;
+    margin-top: 50px;
     h3 {
       font-size: 16px;
       color: var(--color-primary);
     }
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
   .links {
     margin-top: 20px;
@@ -53,6 +56,9 @@ import { Image } from 'astro:assets'
     align-items: flex-start;
     flex-direction: column;
     gap: 6px;
+  }
+  .case-img picture {
+    display: contents;
   }
   .case-img {
     width: 250px;
@@ -64,12 +70,27 @@ import { Image } from 'astro:assets'
       left: 0;
       width: 100%;
       height: 100%;
+      filter: drop-shadow(0 0 45px rgba(112, 113, 232, 0.4)) drop-shadow(0 0 8px #100014);
+      will-change: filter;
     }
   }
   .cases-list {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 20px;
+  }
+  .cases-links {
+    margin-top: 40px;
+    position: relative;
+    .vector {
+      position: absolute;
+      bottom: 0;
+      transform: translate(-5%, 85%);
+      left: 0;
+      width: 1000px;
+      z-index: -1;
+      user-select: none;
+    }
   }
 </style>

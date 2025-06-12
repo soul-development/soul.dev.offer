@@ -5,13 +5,14 @@ import Greeting from "./Greeting.astro"
 import Services from "./Services.astro"
 import Cases from "./Cases.astro"
 import Contacts from "./Contacts.astro"
+import { Image } from "astro:assets"
 export interface Props {
   t: TLangText
 }
 const { t } = Astro.props
 ---
 
-<img src={logo.src} alt="logo" width="170" height="auto" />
+<Image src={logo} alt="logo" width="170"/>
 <Greeting t={t} />
 <Services t={t} />
 <Cases t={t} />

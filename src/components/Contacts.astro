@@ -5,6 +5,7 @@ export interface Props {
   t: TLangText
 }
 const { t } = Astro.props
+import vector4 from '../assets/vector_bg_4.svg'
 ---
 
 <div class="contacts">
@@ -28,12 +29,17 @@ const { t } = Astro.props
         dev.from.soul@gmail.com
       </a>
     </div>
-  </div>
+</div>
+<img class="vector" alt="" src={vector4.src}/>
 
   <style>
     .contacts {
+      display: inline-block;
       margin-top: 50px;
       padding: 16px;
+      border: 2px solid rgba(112, 113, 232, 0.36);
+      box-shadow: 0px 0px 20px 0px rgba(112, 113, 232, 0.3);
+      border-radius: 10px;
     }
     .contacts-list {
       margin-top: 15px;
@@ -45,6 +51,14 @@ const { t } = Astro.props
       font-size: 20px;
       font-weight: 700;
       color: var(--color-primary);
+    }
+    .vector {
+      position: absolute;
+      bottom: 0;
+      right:0;
+      width: 50%;
+      z-index: -1;
+      user-select: none;
     }
   </style>
 </div>
