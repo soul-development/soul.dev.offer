@@ -45,7 +45,7 @@ export const TRANSLATION = {
   },
   contacts: {
     title: "Ready to discuss your project? Here's how to reach us:",
-    tg_chanel: "Telegram chanel:",
+    tg_chanel: "Telegram channel:",
     tg_bot: "Telegram bot:",
   },
 }

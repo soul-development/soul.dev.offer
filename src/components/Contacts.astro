@@ -12,25 +12,24 @@ import vector4 from '../assets/vector_bg_4.svg'
   <h3>{t.contacts.title}</h3>
   <div class="contacts-list">
     <div>
-      <span>Telegram:&nbsp;</span><a href="https://t.me/soul_dev_chat" target="_blank">@soul_dev_chat</a>
+      <span>Telegram:</span><a href="https://t.me/soul_dev_chat" target="_blank">@soul_dev_chat</a>
     </div>
     <div>
-      <span>{t.contacts.tg_chanel}&nbsp;</span><a href="https://t.me/soul_dev_channel" target="_blank">
-        @soul_dev_channel
-      </a>
+      <span>{t.contacts.tg_chanel}</span>
+      <a href="https://t.me/soul_dev_channel" target="_blank">@soul_dev_channel</a>
     </div>
     <div>
-      <span>{t.contacts.tg_bot}&nbsp;</span><a href="https://t.me/soul_dev_bot" target="_blank">
+      <span>{t.contacts.tg_bot}</span><a href="https://t.me/soul_dev_bot" target="_blank">
         @soul_dev_bot
       </a>
     </div>
     <div>
-      <span>EMAIL:&nbsp;</span><a href="mailto:dev.from.soul@gmail.com" target="_blank">
+      <span>EMAIL:</span><a href="mailto:dev.from.soul@gmail.com" target="_blank">
         dev.from.soul@gmail.com
       </a>
     </div>
-</div>
-<img class="vector" alt="" src={vector4.src}/>
+  </div>
+  <img class="vector" alt="" src={vector4.src} />
 
   <style>
     .contacts {
@@ -47,6 +46,10 @@ import vector4 from '../assets/vector_bg_4.svg'
       display: flex;
       flex-direction: column;
       gap: 6px;
+      > div {
+        display: flex;
+        gap: 4px;
+      }
     }
     h3 {
       font-size: 16px;
@@ -60,7 +63,7 @@ import vector4 from '../assets/vector_bg_4.svg'
     .vector {
       position: absolute;
       bottom: 0;
-      right:0;
+      right: 0;
       width: 50%;
       z-index: -1;
       user-select: none;
