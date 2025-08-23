@@ -3,14 +3,16 @@ export interface Props {
   lang: string
 }
 const { lang } = Astro.props
-import "@fontsource/comfortaa/400.css"
-import "@fontsource/comfortaa/700.css"
-import "normalize.css"
+import '@fontsource/comfortaa/400.css'
+import '@fontsource/comfortaa/700.css'
+import 'normalize.css'
+import GoogleAnalytics from '../components/GoogleAnalytics.astro'
 ---
 
 <!doctype html>
 <html lang={lang}>
   <head>
+    <GoogleAnalytics measurementId={lang === 'en' ? 'G-3KTB906ZWD': 'G-WQMN3ZRXX2'}/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -52,7 +54,7 @@ import "normalize.css"
   body {
     background-color: #100014;
     color: #fff;
-    font-family: "Comfortaa", sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     padding: 20px 20px 40px;
     overflow-x: hidden;
     position: relative;

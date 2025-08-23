@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/partytown": "^2.1.4",
     "@fontsource/comfortaa": "^5.2.6",
     "astro": "^5.9.2",
     "normalize.css": "^8.0.1"
