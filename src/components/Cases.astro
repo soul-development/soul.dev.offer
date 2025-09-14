@@ -11,14 +11,16 @@ import vector3 from '../assets/vector_bg_3.svg'
 import { Image } from 'astro:assets'
 const devalokaLink = 'https://t.me/LeelaDevalokabot'
 const transcrLink = 'https://t.me/contentville_transcript_bot'
+const foryourhomeLink = t.cases.foryourhomeLink
 ---
 
 <div class="cases">
   <div class="cases-links">
     <h3>{t.cases.title}</h3>
     <div class="links">
+      <a href={foryourhomeLink} target="_blank">foryourhome.art</a>
       <a href={devalokaLink} target="_blank">@LeelaDevalokabot</a>
-      <a href="https://t.me/Energy_Desenko_bot" target="_blank">@Energy_Desenko_bot</a>
+      <!-- <a href="https://t.me/Energy_Desenko_bot" target="_blank">@Energy_Desenko_bot</a> -->
       <a href={transcrLink} target="_blank">@contentville_transcript_bot</a>
       <a href="https://t.me/VoiceAuthor_bot" target="_blank">@VoiceAuthor_bot</a>
     </div>
@@ -36,7 +38,9 @@ const transcrLink = 'https://t.me/contentville_transcript_bot'
       </a>
     </div>
     <div class="case-img">
-      <Image src={case3} alt="For Your Home case" quality={100} />
+      <a href={foryourhomeLink} target="_blank">
+        <Image src={case3} alt="For Your Home case" quality={100} />
+      </a>
     </div>
   </div>
 </div>

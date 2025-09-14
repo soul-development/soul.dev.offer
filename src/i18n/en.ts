@@ -42,6 +42,7 @@ export const TRANSLATION = {
   },
   cases: {
     title: "A small selection of our case studies:",
+    foryourhomeLink: "https://foryourhome.art/en",
   },
   contacts: {
     title: "Ready to discuss your project? Here's how to reach us:",
