@@ -6,12 +6,16 @@ export interface Props {
 }
 const { t } = Astro.props
 import vector4 from '../assets/vector_bg_4.svg'
+import vc from '../assets/icons/vc.svg'
+import telegram from '../assets/icons/telegram.svg'
+import dzen from '../assets/icons/dzen.svg'
+import behance from '../assets/icons/behance.svg'
 ---
 
 <div class="contacts">
   <h3>{t.contacts.title}</h3>
   <div class="contacts-list">
-    <div>
+    <!-- <div>
       <span>Telegram:</span><a href="https://t.me/soul_dev_chat" target="_blank">@soul_dev_chat</a>
     </div>
     <div>
@@ -23,12 +27,26 @@ import vector4 from '../assets/vector_bg_4.svg'
         @soul_dev_bot
       </a>
     </div>
-    <div>
-      <span>EMAIL:</span><a href="mailto:dev.from.soul@gmail.com" target="_blank">
-        dev.from.soul@gmail.com
+    <div> -->
+      <a href="mailto:team@souldev.site" target="_blank">
+        team@souldev.site
       </a>
     </div>
-  </div>
+  <div class="delimiter"/>
+    <div class="media-list">
+      <a href="https://t.me/soul_dev_channel" target="_blank">
+        <img src={telegram.src} alt="Telegram"  height="24"/>
+      </a>
+      <a href="https://vc.ru/id5175793" target="_blank">
+        <img src={vc.src} alt="VC"  height="24"/>
+      </a> 
+      <a href="https://dzen.ru/soul_dev" target="_blank">
+        <img src={dzen.src} alt="Dzen"  height="24"/>
+      </a>
+      <a href="https://www.behance.net/soul-dev" target="_blank">
+        <img src={behance.src} alt="Behance"  height="24"/>
+      </a>
+    </div>
   <img class="vector" alt="" src={vector4.src} />
 
   <style>
@@ -41,6 +59,12 @@ import vector4 from '../assets/vector_bg_4.svg'
       border-radius: 10px;
       backdrop-filter: blur(2px);
     }
+    .delimiter {
+      margin-top: 10px;
+      height: 1px;
+      width: 100%;
+      background: rgba(112, 113, 232, 0.36);
+    }
     .contacts-list {
       margin-top: 15px;
       display: flex;
@@ -50,6 +74,11 @@ import vector4 from '../assets/vector_bg_4.svg'
         display: flex;
         gap: 4px;
       }
+    }
+    .media-list {
+      margin-top: 10px;
+      display: flex;
+      gap: 12px;
     }
     h3 {
       font-size: 16px;
