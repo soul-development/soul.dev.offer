@@ -65,6 +65,27 @@ import GoogleAnalytics from '../components/GoogleAnalytics.astro'
       padding: 20px 10px 20px;
     }
   }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  [role='button'] {
+    cursor: pointer;
+  }
+
+  @supports (-moz-appearance: none) {
+    * {
+      scrollbar-width: thin;
+    }
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(100 100 100 / 60%);
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #100014;
+  }
   .main-container {
     max-width: 1200px;
     margin: 0 auto;
