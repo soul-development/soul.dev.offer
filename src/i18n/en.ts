@@ -25,7 +25,7 @@ export const TRANSLATION = {
       title:
         "Moving on to bot development — this process is simpler and faster, while delivering results that are just as reliable, functional, and user-friendly:",
       li: [
-        "Basic bot with automated responses to frequently asked questions starting from $750",
+        "Payment bot with payment system integration and recurring payment support starting from $750",
         "Multi-functional bot with API integration and database for complex operations starting from $1300",
         "Advanced AI bot using machine learning for personalized interactions starting from $1800",
         "Bot with AI agent trained on your knowledge base — starting from $1800",
@@ -33,7 +33,7 @@ export const TRANSLATION = {
     },
     interested: {
       color: "Intrigued?",
-      main: "Want to get a closer look at our projects? Below you'll find our contacts and portfolio of IT solutions with reviews from satisfied online entrepreneurs — you'll be joining them very soon!",
+      main: "Want to get a closer look at our projects? Below you'll find our contacts and portfolio of IT solutions.",
       check:
         "Check it out and see the quality and uniqueness of our development work for yourself!",
       online:
