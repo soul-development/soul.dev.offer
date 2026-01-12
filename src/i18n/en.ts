@@ -14,9 +14,9 @@ export const TRANSLATION = {
       title:
         "We do many things well, but our core specialties are developing web applications and bots for small and medium-sized businesses.",
       li: [
-        "If you need a simple yet striking landing page, you should approach us with a budget starting from $2400",
-        "If you're planning a large-scale corporate website, budgets start from $3600",
-        "For a full-featured online store, we recommend allocating a minimum of $4400",
+        "If you need a simple yet striking landing page, you should approach us with a budget starting from $3200",
+        "If you're planning a large-scale corporate website, budgets start from $7000",
+        "For a full-featured online store, we recommend allocating a minimum of $9000",
       ],
     },
     price_limit:
@@ -25,10 +25,10 @@ export const TRANSLATION = {
       title:
         "Moving on to bot development — this process is simpler and faster, while delivering results that are just as reliable, functional, and user-friendly:",
       li: [
-        "Payment bot with payment system integration and recurring payment support starting from $750",
-        "Multi-functional bot with API integration and database for complex operations starting from $1300",
-        "Advanced AI bot using machine learning for personalized interactions starting from $1800",
-        "Bot with AI agent trained on your knowledge base — starting from $1800",
+        "Payment bot with payment system integration and recurring payment support starting from $990",
+        "Multi-functional bot with API integration and database for complex operations starting from $2100",
+        "Advanced AI bot using machine learning for personalized interactions starting from $2100",
+        "Bot with AI agent trained on your knowledge base — starting from $2100",
       ],
     },
     interested: {
