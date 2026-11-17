@@ -23,13 +23,7 @@ const { t } = Astro.props
     </ul>
     <img class="vector" alt="" src={vector2.src}/>
   </div>
-  <div class="interested">
-    <p>
-      <span>{t.services.interested.color}</span>&nbsp;
-      {t.services.interested.main}<br />{t.services.interested.check}
-    </p>
-    <p class="invite">{t.services.interested.online}</p>
-  </div>
+  <p class="invite">{t.services.interested.online}</p>
 </div>
 <style>
   .services {
@@ -71,16 +65,10 @@ const { t } = Astro.props
   .price-limit {
     margin-top: 20px;
   }
-  .interested {
+  .invite {
     margin-top: 50px;
     @media (max-width: 768px) {
       margin-top: 30px;
-    }
-    .invite {
-      margin-top: 20px;
-    }
-    p span {
-      color: var(--color-primary);
     }
   }
 </style>

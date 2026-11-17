@@ -3,7 +3,6 @@ import logo from "../assets/soul-dev-logo.svg"
 import type { TLangText } from "../i18n"
 import Greeting from "./Greeting.astro"
 import Services from "./Services.astro"
-import Cases from "./Cases.astro"
 import Contacts from "./Contacts.astro"
 import { Image } from "astro:assets"
 export interface Props {
@@ -15,7 +14,6 @@ const { t } = Astro.props
 <a href="https://t.me/soul_dev_chat" target="_blank"><Image src={logo} class="logo" alt="logo" /></a>
 <Greeting t={t} />
 <Services t={t} />
-<Cases t={t} />
 <Contacts t={t} />
 
 <style>

@@ -32,10 +32,6 @@ export const TRANSLATION = {
       ],
     },
     interested: {
-      color: "Intrigued?",
-      main: "Want to get a closer look at our projects? Below you'll find our contacts and portfolio of IT solutions.",
-      check:
-        "Check it out and see the quality and uniqueness of our development work for yourself!",
       online:
         "See you at our online meeting, where together we'll lay a solid foundation for our future collaboration 💻",
     },
